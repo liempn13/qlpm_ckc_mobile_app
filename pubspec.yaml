@@ -1,0 +1,28 @@
+name: qlpm_ckc_mobile_app
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.4.3 <4.0.0"
+
+dependencies:
+  awesome_notifications: ^0.9.3+1
+  http: ^1.2.2
+  provider: ^6.1.2
+  rx_shared_preferences: ^3.0.0
+  intl: ^0.19.0
+  flutter_speed_dial: ^7.0.0
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/images/logos/
