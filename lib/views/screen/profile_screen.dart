@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:qlpm_ckc_mobile_app/views/custom_widgets/base_page.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -11,10 +10,13 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
-    return BasePage(
-      showAppBar: true,
-      titletext: "Quản Lý Thông Tin Cá Nhân",
-      showLeadingAction: true,
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Quản Lý Thông Tin Cá Nhân"),
+        centerTitle: true,
+        automaticallyImplyLeading: true,
+        backgroundColor: Colors.white,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
@@ -106,6 +108,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               readOnly: true,
               decoration: InputDecoration(label: Text("Quyền")),
             ),
+            ElevatedButton(onPressed: () {}, child: Text(""))
           ],
         ),
       ),
